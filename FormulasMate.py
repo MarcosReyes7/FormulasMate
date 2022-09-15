@@ -1,7 +1,7 @@
 ####################Menu####################################################
 print("Bienvenido dime que formula deseas hacer:")
 
-a=["Suma[S]", "Resta[R]", "Multiplicacion[M]", "Division[D]", "Otros[O]"]
+a=["Suma[S]", "Resta[R]", "Multiplicacion[M]", "Division[D]","Potencia[P]" "Otros[O]"]
 
 print(" ")##########> Lo ocupo para estetica
 
@@ -42,7 +42,7 @@ if x=="R":
 if x=="M":
     print ("Seccion Multiplicación")
     def multiplicacion(a,b):
-      b9  multiplicacion=a*b
+        multiplicacion=a*b
         print(multiplicacion)
             
     def main():
@@ -78,8 +78,8 @@ if x=="D":
             print(entera)
                  
         def main():
-            a=float(input("Selecciona un primer numero:"))#############>ocupe el float para decimales
-            b=float(input("Selecciona un segundo numero:"))
+            a=int(input("Selecciona un primer numero:"))#############>ocupe el float para decimales
+            b=int(input("Selecciona un segundo numero:"))
             Entera(a,b)
         main()
     if x=="R":
@@ -88,11 +88,22 @@ if x=="D":
             print(residuo)
                  
         def main():
-            a=float(input("Selecciona un primer numero:"))#############>ocupe el float para decimales
-            b=float(input("Selecciona un segundo numero:"))
+            a=int(input("Selecciona un primer numero:"))#############>ocupe el float para decimales
+            b=int(input("Selecciona un segundo numero:"))
             Residuo(a,b)
         main()
-###############Division###############################################################
+###############################division############################################
+if x=="P":
+    def Potencia(a,b):
+       potencia=a**b
+       print(potencia)
+       
+    def main():
+        a=int(input("Selecciona un numero:"))#############>
+        b=int(input("Selecciona a que potencia deseas elevarlo:"))
+        Potencia(a,b)
+    main()
+###############Potencia###############################################################
 
 if x=="O":
     
@@ -116,8 +127,8 @@ if x=="O":
                 print(Area)
                  
             def main():
-                a=float(input("Selecciona tu base:"))#############>ocupe el float para decimales
-                b=float(input("Selecciona tu altura:"))
+                a=int(input("Selecciona tu base:"))#############>ocupe el float para decimales
+                b=int(input("Selecciona tu altura:"))
                 
                 triangulo(a,b)
                 
@@ -128,8 +139,8 @@ if x=="O":
                 area=a*b
                 print(area)
             def main():
-                a=float(input("Selecciona tu base:"))#############>ocupe el float para decimales
-                b=float(input("Selecciona tu altura:"))
+                a=int(input("Selecciona tu base:"))#############>ocupe el float para decimales
+                b=int(input("Selecciona tu altura:"))
                 Cuadrado(a,b)
             main()
             
@@ -138,8 +149,8 @@ if x=="O":
                 area=a*b
                 print(area)
             def main():
-                a=float(input("Selecciona tu base:"))#############>ocupe el float para decimales
-                b=float(input("Selecciona tu altura:"))
+                a=int(input("Selecciona tu base:"))#############>ocupe el float para decimales
+                b=int(input("Selecciona tu altura:"))
                 Rectangulo(a,b)
 ###############################Area##################################################################################################################
     if x=="P":
