@@ -1,34 +1,43 @@
+##En la antiguedad las personas tenian que depender de dias y dias de calculos y realmente era una tarea dificil, aunque es dificil pensarlo
+#las personas del pasado verian nuestra sociedad actual como un mundo perfecto donde tienes la mente del mundo en tus manos y practicamente en cualquier lugar
+#en esto es en donde quiero enfocar mi proyecto, considero que el ser humano a aprendido a adaptarse y se puede ver en el ejemplo de las matematicas que manejamos
+#cuando ya no es necesario escribir mil formulas para llegar a un mismo resultado, en aquel entonces la gente lo veia con inovacion, yo creo que la tecnologia y las matematicas deberian ir de la mano
+## y en vez de aprender a usar mil formulas, deberia existir una manera facil de replicarlo en una hoja y eso es lo que busco con este programa
+#poder encontrar la solucion a problemas basicos que para algunos puede llegar a ser dificil al ojo y parecer tramposo para la mente, la realidad es que es una necesidad para cualquier individuo
+#ya que muchas veces podemos interpretar que el aprendizaje de las personas es lento por algunos problemas o puede parecer que la persona no se esta esforzando, busco mejorar la calidad de pobreza mental para los usuarios
+#que mas que ver las matematicas como una obligacion lo vean como algo necesario y fundamental para la vida, en este proyecto con ayuda del lenguaje python quiero dar a conocer mi trabajo como algo que ayuda a los jovenes
+#ya que para mi fue dificil poder pasar esta etapa de mi vida, donde las matematicas podian llegar a verse dificiles.
 ####################Menu####################################################
 print("Bienvenido dime que formula deseas hacer:")
 
-def lista(lobby):
+def lista(lobby):##########> la ocupo para crear un inicio del programa
     lobby=["Suma[S]", "Resta[R]", "Multiplicacion[M]", "Division[D]", "Otros[O]"]
     print(" ")##########> Lo ocupo para estetica
     for lista in range (len(lobby)):##>Determino un rango
         print(lobby[lista])
         
-lista(["Suma[S]", "Resta[R]", "Multiplicacion[M]", "Division[D]", "Otros[O]"])
+lista(["Suma[S]", "Resta[R]", "Multiplicacion[M]", "Division[D]", "Otros[O]"])########>invoco la matriz 
 
 print(" ")##########> Lo ocupo para estetica 
-x=str(input("Selecciona la formula:"))
-    
-######>pongo "str" porque estoy pidiendo un valor no numerico
+x=str(input("Selecciona :"))#################>selecciona una opcion
 ##############################Suma##########################################
 
 if x=="S":
-    print ("Seccion suma")
+    
     def suma_one(uno,dos):
-        resultado = uno+dos
+        resultado = uno+dos###########>formula de la suma
         return resultado
 
     def valores_suma():
         x1=int(input("Primer valor"))
         y2=int(input("Segundo valor"))
-        suma_one(x1,y2)
+        suma_one(x1,y2)###################>invoco la funcion suma para sustituir los valores con los acumulados
         print (suma_one(x1,y2))
     
     
     valores_suma()
+    
+    
 #############################Suma#####################################################
 if x=="R":
     print ("Seccion resta")
@@ -72,15 +81,15 @@ if x=="D":
     x=str(input("Deseas hacer una division:"))
     
     if x=="D":
-        def Decimal(a,b):
+        def decimal(a,b):
             decimal=a/b
             return decimal
                  
         def valores_dv():
             x=float(input("Selecciona un primer numero:"))#############>ocupe el float para decimales
             y=float(input("Selecciona un segundo numero:"))
-            Decimal(x,y)
-            print(Decimal(x,y))
+            decimal(x,y)
+            print(decimal(x,y))
         valores_dv()
         
     if x=="E":
@@ -237,10 +246,10 @@ if x=="O":
             print (matriz)
         ejecucion_matriz()
         
-    elif x!="A" or x!="P" or x!="CO" or x!="S" or x!="MA":
+    if x!="A" or x!="P" or x!="CO" or x!="S" or x!="MA":
         print("Digito no valido")
             
             
 #################################Series#############################################
-elif x!="S" or x!="R" or x!="M" or x!="D" or  x!="O":########################> para poder enviar al usuario si no escoje una letra correcta
+if x!="S" or x!="R" or x!="M" or x!="D" or  x!="O":########################> para poder enviar al usuario si no escoje una letra correcta
     print ("Digito no valido")
